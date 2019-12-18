@@ -11,7 +11,7 @@ let telefono = [];
 let email = [];
 let accion;
 let volverAlMenuPrincipal = "SI";
-
+let repetirOperacion = "SI";
 while (volverAlMenuPrincipal == "SI") {
     accion = prompt(`✅ Seleccione una operacion 
       --------------------------
@@ -28,7 +28,7 @@ while (volverAlMenuPrincipal == "SI") {
     //...............AGREGAR..............
 
     if (accion == "AGREGAR") {
-        let repetirOperacion = "SI";
+        repetirOperacion;
 
         while (repetirOperacion == "SI") {
             nombre = prompt(" 📓 Ingrese el nombre del usuario");
@@ -234,5 +234,7 @@ while (volverAlMenuPrincipal == "SI") {
         };
     };
 }
+
+// ...............SALIR..............
 
 console.log(listaUsuarios)
